@@ -50,7 +50,7 @@ body {
     border-radius: 50%;
     width: 250px;
     aspect-ratio: 1;
-    box-shadow: 0 0 500px 3px #aaaaaa;
+    
 }
 
 .who {
@@ -133,11 +133,17 @@ body {
     .social img{
         width: 50px;
     }
+    
+        
+
+    }
     .phot img {
         border-radius: 50%;
         width: 150px;
         aspect-ratio: 1;
-        box-shadow: 0 0 500px 3px #aaaaaa;
+        box-shadow: 0 0 100px 3px #eaeaea;
+        
+        
     }
     .video {
         width: 370px;
