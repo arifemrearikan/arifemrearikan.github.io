@@ -110,8 +110,8 @@ body {
     .who {
         flex-direction: column;
         padding: 2rem;
-        font-size: 1.5rem;
-        margin: 4rem 2rem;
+        font-size: 0.9rem;
+        margin: 4rem 4rem;
     }
 
     .social {
@@ -121,9 +121,17 @@ body {
         margin: 0;
     }
 
-    
+    .social{
+        gap: 0rem;
+    }
     .social div {
         padding-top: 2rem;
+        font-size: 0.7rem;
+        width: fit-content;
+        
+    }
+    .social img{
+        width: 50px;
     }
     .phot img {
         border-radius: 50%;
