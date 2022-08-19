@@ -48,10 +48,10 @@ body {
 
 .phot img {
     border-radius: 50%;
-    margin-left: 2rem;
     width: 250px;
     aspect-ratio: 1;
-    box-shadow: none;
+    margin: 2rem;
+    box-shadow: 0 0 100px 3px #eaeaea;
     
 }
 
@@ -135,14 +135,12 @@ body {
         width: 50px;
     }
     
-        
-
-    }
     .phot img {
+        margin: 0;
         border-radius: 50%;
-        width: 150px;
+        width: 125px;
         aspect-ratio: 1;
-        box-shadow: 0 0 100px 3px #eaeaea;
+        
         
         
     }
@@ -150,4 +148,7 @@ body {
         width: 370px;
         height: auto;
         margin-bottom: 4rem;
+    }   
+
     }
+    
