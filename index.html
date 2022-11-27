@@ -9,43 +9,91 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Arif Emre ARIKAN">
     <title>Arif Emre ARIKAN</title>
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="main.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner:wght@500&family=Montserrat:ital,wght@0,200;0,500;0,700;1,500&display=swap"
         rel="stylesheet">
+    <script src="https://kit.fontawesome.com/7995ce9a69.js" crossorigin="anonymous"></script>
 
 </head>
 
-<body>
-    <section class="top">
-        <div class="who">
-            <div class="phot"><img src="images/ArifEmreARIKANCV.jpg" alt=""></div>
-            <div class="name text-center">
-                <h1>Arif Emre ARIKAN</h1>
-            </div>
-            <div class="social">
-                <div class="lin">
-                    <a href="https://www.linkedin.com/in/arif-emre-arikan/" target="_blank"><img src="images/linkedin.png" alt=""></a>
-                    <h2>Linkedin</h2>
-                </div>
-                <div class="cv"><a
-                        href="https://europa.eu/europass/eportfolio/api/eprofile/shared-profile/ab0057b5-5f1d-4ce0-b8a4-163e14360160?view=html"target="_blank" ><img
-                            src="images/cv.png" alt=""></a>
-                    <h2>Resume</h2>
-                </div>
-            </div>
-        </div>
-        <div class="video">
-            <iframe width="640" height="360"
-                src="https://www.youtube.com/embed/gmDtctbW2qQ?controls=0?autoplay=1&mute=1?"
-                title="YouTube video player" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen></iframe>
-        </div>
-    </section>
 
+<body>
+    <div class="lang">
+        <a href="#tr" data-reload>Türkçe</a>
+        <a href="#en" data-reload>English</a>
+    </div>
+    <div class="container">
+        <div class="card" data-tilt>
+
+            <img src="images/ArifEmreARIKANCV.jpg" alt="">
+            <h2><b> Arif Emre ARIKAN</b></h2>
+            <p id="title">-Electrical And Electronics Engineer</p><br>
+            <p>-Front End Developer To Be</p>
+            <div class="links">
+                <a href="https://www.linkedin.com/in/arif-emre-arikan/" target="_blank"><i
+                        class="fa-brands fa-linkedin fa-3x"></i></a>
+                <a href="https://www.youtube.com/watch?v=gmDtctbW2qQ" target="_blank"><i
+                        class="fa-brands fa-youtube fa-3x"></i></a>
+                <a href="https://europa.eu/europass/eportfolio/api/eprofile/shared-profile/ab0057b5-5f1d-4ce0-b8a4-163e14360160?view=html"
+                    target="_blank"><i class="fa-solid fa-file fa-3x"></i></a>
+            </div>
+            <div class="container-desc">
+                <div class="desc">Linked-In</div>
+                <div class="desc" id="VideoCV">Video<br>Resume</div>
+                <div class="desc" id="CV">Resume</div>
+            </div>
+            <div class="button" id="mail"><a href="mailto: arifemrearikan@gmail.com?cc=yemre3542@gmail.com">Mail Me</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="vanilla-tilt.js"></script>
+
+    <script>
+
+        // Sayfayı Yenile
+        var delayInMilliseconds = 5000; //1 second
+        var datareload = document.querySelectorAll("[data-reload]");
+        // ÇEVİRİ
+        var language = {
+            eng: {
+                title: "-Electrical And Electronics Engineer",
+                VideoCV: "Video<br>Resume",
+                CV: "Resume",
+                mail: "Mail Me"
+
+            },
+            tr: {
+                title: "-Elektrik Elektronik Mühendisi",
+                VideoCV: "Video",
+                CV: "Özgeçmiş",
+                mail: "Mail Gönder"
+            }
+        }
+        // DİLİ ALGILA
+        if (window.location.hash) {
+            if (window.location.hash === "#tr") {
+                title.textContent = language.tr.title;
+                VideoCV.textContent = language.tr.VideoCV;
+                CV.textContent = language.tr.CV;
+                mail.textContent = language.tr.mail;
+            }
+
+        }
+
+        // Sayfayı Yenile
+        for (i = 0; i <= datareload.length; i++) {
+            
+            datareload[i].onclick = function () {
+
+                location.reload(true);
+            }
+        }
+
+    </script>
 </body>
 
 </html>

@@ -1,0 +1,143 @@
+:root {
+    --h2-color: #ee6c4d;
+    --p-color: #293241;
+}
+
+a {
+    text-decoration: none;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Edu VIC WA NT Beginner', cursive;
+    box-sizing: border-box;
+
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    background-image: url(images/bg.jpg);
+    background-position: center;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.card {
+    width: 90%;
+    max-width: 480px;
+    color: #fff;
+    text-align: center;
+    padding: 50px 35px;
+    border: 1px solid rgba(238, 108, 77, 0.4);
+    background: rgba(255, 255, 255, 0.4);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0green, 0, 0.1);
+
+}
+
+.card img {
+    width: 150px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+
+
+}
+
+.card h2 {
+    font-size: 30px;
+    font-weight: 600;
+    margin-top: 20px;
+    color: var(--h2-color);
+}
+
+.card p {
+    font-size: 20px;
+    margin: 10px;
+    color: var(--p-color);
+}
+
+.card .links i {
+    color: var(--p-color);
+    padding: 0 20px 0 0;
+    margin: 20px 0 0 0;
+    transition: 0.5s;
+
+
+}
+
+.card .links i:hover {
+    color: var(--h2-color);
+}
+
+.card .links i:hover .container-desc {
+    color: var(--h2-color);
+}
+
+.container-desc {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    color: var(--p-color);
+
+
+}
+
+.container-desc div {
+    padding: 0 23px 0 0;
+
+}
+
+.button {
+    margin: 20px 0;
+    padding: 10px 20px;
+    border-radius: 16px;
+    background-color: var(--p-color);
+    display: inline-block;
+    transition: 0.5s;
+}
+
+.button a {
+    color: white;
+    font-size: 20px;
+}
+
+.button:hover {
+    background-color: var(--h2-color);
+
+}
+
+.button:hover a {
+
+    color: var(--p-color);
+
+}
+
+.lang {
+    position: absolute;
+    right: 5px;
+    display: flex;
+    
+}
+
+.lang a {
+    background-color: white;
+    border-radius: 16px;
+    padding: 10px 30px;
+    color: var(--p-color);
+    margin: 5px;
+    text-decoration: none;
+}
+
+
+
+.lang a:hover {
+    background-color: var(--h2-color);
+    color: var(--p-color);
+
+}
